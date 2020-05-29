@@ -11,19 +11,27 @@
   <style>
     code{ color:#1abc9c; }
     html{ background:#eee; }
+  <!--整个网页显示基调-->
     body{ width:90%; max-width: 960px; background:#fff; margin:3em auto 0; padding-top:2em;border:1px solid #ddd;border-width:0 1px;}
+  <!--万物皆可盒-->
     pre{white-space:pre-wrap;}
+  <!--被包围在 <pre> 标签 元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体pre-wrap保留空白符序列，但是正常地进行换行-->
 
     i.serif{ text-transform:lowercase; color:#1abc9c; }
+  <!--定义无大写字母，仅有小写字母-->
     :-moz-any(h1, h2, h3, h4, h5, h5) i.serif{ text-transform: capitalize; }
+  <!---moz：匹配Firefox浏览器-->
     i.serif:hover{ color:inherit; }
+  <!--伪类，点击等变色，inherit 关键字指定一个属性应从父元素继承它的值-->
 
     #wrapper{ padding:5% 10%; position:relative;}
+  <!--盒子模型，所有元素都可以盒子模型-->
     #tagline{ color:#999; font-size:1em; margin:-2em 0 2em; padding-bottom:2em; border-bottom:3px double #eee; }
     #fork{ position:fixed; top:0; right:0; _position:absolute; }
     #table{ margin-bottom:2em; color:#888; }
     #github{ position:absolute;top:1em;}
     #github iframe{ display:inline;margin-right:1em; }
+  <!--display中的inline变块级元素为行级元素-->
 
     @media only screen and (max-width: 640px) {
       table{ word-break:break-all;word-wrap:break-word;font-size:12px; }
@@ -33,6 +41,8 @@
       #fork{ display:none; }
     }
   </style>
+  <!--使用 @media 查询，你可以针对不同的媒体类型定义不同的样式。@media 可以针对不同的屏幕尺寸设置不同的样式，会根据浏览器的宽度和高度重新渲染页面-->
+  <!--word—**在合适的点换行-->  
   <!--内联样式表-->
 </head>
 <body>
@@ -54,6 +64,7 @@
 
 <ol id="table">
   <li><a href="#section1">关于 <i class="serif">Typo.css</i></a></li>
+  <!--锚 URL - 指向页面中的锚（href="#top"）id-->
   <li><a href="#section2">排版实例</a>
     <ul>
       <li><a href="#section2-1">例1：论语学而篇第一</a></li>
